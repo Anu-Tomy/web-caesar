@@ -25,11 +25,8 @@ def build_page(textarea_content):
     message_label = "<label>Type a message:</label>"
     textarea="<textarea name='message'>" + textarea_content + "</textarea>"
 
-    submit = "<Input type = 'submit'/>"
-    form = ("<form method='post'>") + rot_label +
-            rotation_input + "<br>" +
-           message_label + textarea + "<br>" + submit + "</form>")
-
+    submit = "<Input type ='submit'/>"
+    form = ("<form method='post'>") + rot_label + rotation_input + "<br>" + message_label + textarea + "<br>" + submit + "</form>"
     header = "<h2>Web Caesar</h2>"
 
     return header + form
